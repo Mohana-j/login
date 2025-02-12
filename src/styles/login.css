@@ -1,0 +1,126 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f3f4f7, #cfd9e2);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Login Container */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #388E3C;
+    transform: translateY(-2px);
+  }
+  
+/* Dashboard Styling */
+.dashboard-container {
+    width: 95%; /* Increase width */
+    max-width: 1200px; /* Set a larger max width */
+    padding: 40px; /* More padding for better spacing */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Adjust the content area */
+.dashboard-content {
+    display: flex;
+    justify-content: space-around; /* Spread out items */
+    gap: 20px; /* Add spacing between sections */
+    margin-top: 20px;
+}
+
+/* Make the input and table sections take more space */
+.marks-input-container, .marks-table-container {
+    width: 50%; /* Increase section width */
+    padding: 25px; /* Increase padding */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design: Stack items vertically on smaller screens */
+@media (max-width: 900px) {
+    .dashboard-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marks-input-container, .marks-table-container {
+        width: 90%;
+    }
+}
+
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #5C6BC0;
+    color: white;
+  }
+  
+  table tr:hover {
+    background: #f5f5f5;
+  }
+  
